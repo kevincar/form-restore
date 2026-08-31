@@ -1,0 +1,101 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 340px;
+  margin: 0;
+  color: #111827;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #f9fafb;
+}
+
+main {
+  display: grid;
+  gap: 12px;
+  padding: 14px;
+}
+
+h1,
+p {
+  margin: 0;
+}
+
+h1 {
+  font-size: 18px;
+  line-height: 1.25;
+}
+
+p {
+  color: #4b5563;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+#saved-data {
+  display: grid;
+  gap: 8px;
+}
+
+.modal-entry {
+  display: grid;
+  gap: 6px;
+  padding: 10px;
+  border: 1px solid #d1d5db;
+  border-radius: 6px;
+  background: #ffffff;
+}
+
+.modal-entry h2 {
+  margin: 0;
+  font-size: 14px;
+  line-height: 1.3;
+}
+
+.modal-entry ul {
+  display: grid;
+  gap: 4px;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.modal-entry li {
+  display: flex;
+  justify-content: space-between;
+  gap: 8px;
+  color: #374151;
+  font-size: 12px;
+}
+
+.field-name {
+  overflow-wrap: anywhere;
+}
+
+.field-value {
+  max-width: 150px;
+  overflow: hidden;
+  color: #6b7280;
+  text-align: right;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+button {
+  min-height: 38px;
+  border: 0;
+  border-radius: 6px;
+  color: #ffffff;
+  font-weight: 700;
+  background: #2563eb;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #9ca3af;
+  cursor: not-allowed;
+}
+
+button[data-active="true"] {
+  background: #b91c1c;
+}
